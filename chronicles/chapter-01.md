@@ -84,9 +84,9 @@ The Warrior knew that the kingdom's survival depended on constant growth and ada
 
 She established a tradition: every week, the council would assess what the kingdom needed next. What buildings had to be constructed? What systems had to be created? What roles had to be filled?
 
-And they would put out a call — a **quest** — inviting the citizens to claim these roles and build them.
+And they would put out a call — a **quest** — inviting the citizens to take on these roles and build them.
 
-The citizen who claimed the quest would study the kingdom's needs, design their solution, and build it with their own hands and their own mind. They would be guided by principles of good design, but free to express their creativity.
+The citizen who took on the quest would study the kingdom's needs, design their solution, and build it with their own hands and their own mind. They would be guided by principles of good design, but free to express their creativity.
 
 When the quest was complete, they would present it to the council. If it was well-crafted, well-designed, and well-integrated with the kingdom's needs, it would be **merged** into the official canon.
 

@@ -37,14 +37,13 @@ Every week, a new chapter of the kingdom's story is released describing what the
 ## ⚙️ How It Works
 
 ```
-📜 Weekly Quest Drop  →  🛠️ You Claim & Code  →  📬 Raise a PR  →  👑 Best PR Merged  →  🏙️ Kingdom Grows
+📜 Weekly Quest Drop  →  🛠️ You Code  →  📬 Raise a PR  →  👑 Best PR Merged  →  🏙️ Kingdom Grows
 ```
 
 1. Every week, a `quest.md` is released with new buildings the kingdom needs
-2. You **claim a class** by commenting on its GitHub issue
-3. You have **5 days** to raise a PR — or the claim opens back up
-4. The community reviews all PRs using the [Review Rubric](docs/REVIEW_RUBRIC.md)
-5. The best implementation gets merged and you are permanently credited as a **Kingdom Official**
+2. You write your code and raise a PR for the entity you want to build
+3. The community reviews all PRs using the [Review Rubric](docs/REVIEW_RUBRIC.md)
+4. The best implementation gets merged and you are permanently credited as a **Kingdom Official**
 
 ---
 
@@ -66,8 +65,7 @@ Every entity implements `KingdomEntity` — the core contract every building in 
 ## 📜 The Rules
 
 - **Language**: Java only. No exceptions.
-- **Claim limit**: Maximum 2 class claims per contributor per week
-- **Claim expiry**: 5 days — unclaimed PRs open back up automatically
+- **PR limit**: Maximum 2 PRs per contributor per week
 - **UML required**: Every PR must include a UML diagram of your class
 - **Core files are off-limits**: `KingdomEntity.java`, `Kingdom.java`, `CityHall.java` are maintainer-only
 - **The kingdom must always compile**: Your PR must pass CI — if it breaks existing code, it gets rejected
@@ -90,23 +88,13 @@ Every entity implements `KingdomEntity` — the core contract every building in 
 
 Check [`quests/week-01/quest.md`](quests/week-01/quest.md) for this week's available classes.
 
-### 2. Claim a class
-
-Find the corresponding GitHub Issue and comment:
-
-```
-claiming
-```
-
-You'll be auto-assigned. You now have 5 days.
-
-### 3. Implement your class
+### 2. Implement your class
 
 - Must implement `KingdomEntity` interface
 - Must follow [Code Standards](docs/CODE_STANDARDS.md)
 - Must include a UML diagram in your PR
 
-### 4. Raise a PR
+### 3. Raise a PR
 
 Use the [PR Template](.github/PULL_REQUEST_TEMPLATE.md). Include:
 
@@ -114,7 +102,7 @@ Use the [PR Template](.github/PULL_REQUEST_TEMPLATE.md). Include:
 - A brief explanation of your design decisions
 - Passing CI
 
-### 5. Community Review
+### 4. Community Review
 
 Other contributors review your PR against the [Review Rubric](docs/REVIEW_RUBRIC.md). Best design wins the merge.
 

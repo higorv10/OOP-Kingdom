@@ -6,9 +6,8 @@ Welcome, Builder! Thank you for your interest in contributing to the OOP Kingdom
 
 1. **Read the Chronicles**: Start with [Chapter 00](../chronicles/chapter-00.md) and [Chapter 01](../chronicles/chapter-01.md) to understand our philosophy
 2. **View Week 1 Quest**: Check [quests/week-01/quest.md](../quests/week-01/quest.md) for this week's available entities
-3. **Claim a Quest**: Create an issue using the [🗂️ Quest Claim template](ISSUE_TEMPLATE/claim.md) to claim an entity
-4. **Follow Guidelines**: Reference [quests/template.md](../quests/template.md) for comprehensive submission rules
-5. **Submit Your PR**: Push your code and create a PR using the [📋 PR Template](PULL_REQUEST_TEMPLATE.md)
+3. **Follow Guidelines**: Reference [quests/template.md](../quests/template.md) for comprehensive submission rules
+4. **Submit Your PR**: Push your code and create a PR using the [📋 PR Template](PULL_REQUEST_TEMPLATE.md)
 
 ---
 
