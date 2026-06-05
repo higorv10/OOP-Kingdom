@@ -30,6 +30,8 @@ oop-kingdom/
 │   ├── chapter-01.md
 │   └── mentions.md             #     Hall of Honourable Mentions
 │
+├── uml/                        # UML diagrams (one .md file per class)
+│
 ├── state/                      # 💾  Auto-generated — do not edit manually
 │   └── kingdom.json
 │

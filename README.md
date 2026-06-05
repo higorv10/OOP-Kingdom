@@ -64,7 +64,7 @@ Whether you're a beginner learning Java and OOP, or an experienced developer wan
 | **1. Quest drops** | A `quest.md` is released with new buildings the kingdom needs |
 | **2. You pick an entity** | Choose one — Barracks, Blacksmith, Market, or whatever is available |
 | **3. You implement it** | Write your class and its tests (a UML diagram earns bonus points) |
-| **4. You raise a PR** | Open a Pull Request with your code, tests, and diagram |
+| **4. You raise a PR** | Open a Pull Request with your code, tests, and optional UML diagram |
 | **5. Community reviews** | All PRs are scored against the [Review Rubric](docs/REVIEW_RUBRIC.md) |
 | **6. Best design wins** | The highest-scoring implementation gets merged |
 
@@ -181,9 +181,13 @@ Do **not** bundle multiple entities, modify core files (`KingdomEntity.java`, `K
 
 ### UML Diagram (Optional — Bonus Points)
 
-A Mermaid UML diagram showing your class hierarchy and relationships earns you **10 points** on the scoring rubric. You can still submit without one — you just miss out on those points.
+A Mermaid UML diagram earns you **10 bonus points** on the scoring rubric. You can still submit without one — you just miss out on those points.
 
-Example:
+**Where to put it:** Save your diagram as a `.md` file in the [`uml/`](uml/) folder named after your class (e.g., `uml/barracks.md`).
+
+**What to include:** Only classes directly related to your implementation — the contract it extends and `KingdomEntity`. Do **not** diagram the entire kingdom hierarchy (CityHall, Farm, Lumberyard, etc.). Keep it focused on your entity.
+
+Example — `uml/barracks.md`:
 
 ```mermaid
 classDiagram
@@ -306,7 +310,7 @@ All tests must pass.
 
 ### Step 5 — Draw your UML diagram (optional, +10 pts)
 
-Create a Mermaid `classDiagram` showing your class, its parent contract, and `KingdomEntity`. This is **not required**, but it earns you 10 points during review:
+Save it in [`uml/`](uml/) as a `.md` file named after your class (e.g., `uml/barracks.md`). Create a Mermaid `classDiagram` showing only your class, its parent contract, and `KingdomEntity` — **not** the entire kingdom tree. This is **not required**, but it earns you 10 points during review:
 
 ```mermaid
 classDiagram
@@ -333,7 +337,7 @@ Add yourself in the root [`contributors.json`](contributors.json):
 
 ### Step 7 — Raise your PR
 
-Open a Pull Request on GitHub. Use the [PR Template](.github/PULL_REQUEST_TEMPLATE.md). Include a brief explanation of your design decisions and optionally your UML diagram.
+Open a Pull Request on GitHub. Use the [PR Template](.github/PULL_REQUEST_TEMPLATE.md). Include a brief explanation of your design decisions and optionally link to your UML diagram from the `uml/` folder.
 
 ---
 
@@ -356,6 +360,7 @@ OOP-Kingdom/
 ├── chronicles/                       # The kingdom's story
 │   ├── chapter-00.md
 │   └── chapter-01.md
+├── uml/                              # UML diagrams (one .md file per class)
 ├── docs/                             # Documentation
 │   ├── BUILD.md                      # Build & test commands
 │   ├── CODE_STANDARDS.md             # OOP principles & naming rules

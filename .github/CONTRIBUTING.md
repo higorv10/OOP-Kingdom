@@ -16,7 +16,7 @@ Welcome, Builder! This guide covers everything you need to submit a high-quality
 - [ ] **Add a `static` registration block** — `KingdomRegistry.register(YourClass.class);`
 - [ ] **Write unit tests** — constructor, contract methods, extra methods, Jackson serialization
 - [ ] **Run tests** — `cd kingdom && mvn clean test` (all must pass)
-- [ ] **Create a UML diagram** (optional, +10 pts) — Mermaid classDiagram showing your hierarchy
+- [ ] **Create a UML diagram** (optional, +10 pts) — place in `uml/yourclass.md`, include only directly related classes
 - [ ] **Update [`contributors.json`](../contributors.json)** — add your GitHub username
 - [ ] **Open a PR** using the [PR Template](PULL_REQUEST_TEMPLATE.md)
 
@@ -84,7 +84,9 @@ All tests must pass. PRs with failing tests are rejected.
 
 ## 📊 UML Diagram (Optional — +10 Points)
 
-A Mermaid class diagram earns bonus review points. Not required, but recommended.
+Save your diagram in [`uml/`](../uml/) as a `.md` file named after your class (e.g., `uml/market.md`). Include only classes directly related to your implementation — the contract it extends and `KingdomEntity`. Keep it focused, not the entire kingdom tree.
+
+Example `uml/market.md`:
 
 ```mermaid
 classDiagram

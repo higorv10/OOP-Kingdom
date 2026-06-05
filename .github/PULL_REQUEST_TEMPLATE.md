@@ -33,7 +33,7 @@ mvn clean test
 
 ## 📊 UML Diagram (Optional)
 
-*Attach a Mermaid UML diagram here showing how your class relates to KingdomEntity, CityHall, and other entities. Not required, but earns 10 bonus points in the review rubric.*
+*Save a Mermaid UML diagram in [`uml/`](../uml/) as a file named after your class (e.g., `uml/market.md`). Include only classes directly related to your implementation — the contract it extends and `KingdomEntity`. Not required, but earns 10 bonus points in the review rubric.*
 
 ```mermaid
 classDiagram
@@ -63,7 +63,7 @@ classDiagram
 
 **CI & Documentation:**
 - [ ] CI passes (GitHub Actions)
-- [ ] UML diagram included showing class relationships (optional, +10 pts)
+- [ ] UML diagram in `uml/` folder showing only directly related classes (optional, +10 pts)
 - [ ] No modifications to README, pom.xml, Main.java, or other core files
 - [ ] `contributors.json` updated (name added, or appended with comma if extending an existing class)
 - [ ] Commit message(s) are clear and descriptive
