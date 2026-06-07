@@ -260,7 +260,16 @@ public class Barracks extends AbstractBarracks {
         this.name = "Barracks";
         this.description = "...";
         this.foundingDate = LocalDate.now();
-        this.status = Status.UNDER_CONSTRUCTION;
+        this.status = Status.UNDER_CONSTRUCTION; // Default — freshly deserialized
+    }
+
+    // Parameterized constructor for explicit creation
+    public Barracks(String name, String description) {
+        this.id = "BARRACKS-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        this.name = name;
+        this.description = description;
+        this.foundingDate = LocalDate.now();
+        this.status = Status.OPERATIONAL; // Explicitly built
     }
 
     // Implement all abstract methods from the contract
@@ -283,7 +292,8 @@ public class Barracks extends AbstractBarracks {
 - [ ] Extends the quest's abstract contract
 - [ ] Implements all abstract methods
 - [ ] Has `@JsonProperty` on every field
-- [ ] Has a no-arg constructor with safe defaults (UUID identity, current date)
+- [ ] Has a no-arg constructor with safe defaults (UUID identity, current date, `UNDER_CONSTRUCTION` status)
+- [ ] Has a parameterized constructor (if applicable) with `OPERATIONAL` status
 - [ ] Has a `static { KingdomRegistry.register(...); }` block
 - [ ] Implements all `KingdomEntity` interface methods
 

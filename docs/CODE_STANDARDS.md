@@ -92,7 +92,7 @@ Every submitted class **must** have a corresponding test class. Tests are not op
 
 | Test Type | What to Test |
 |-----------|-------------|
-| **Constructor Tests** | Default constructor sets safe, non-null default values |
+| **Constructor Tests** | Default constructor sets safe, non-null default values (`UNDER_CONSTRUCTION` status). Parameterized constructor (if any) sets `OPERATIONAL` status. |
 | **Business Logic Tests** | Methods perform their operations and modify state correctly |
 | **Edge Case Tests** | What happens with invalid input, zero values, boundary conditions? |
 | **Serialization Tests** | The class serializes and deserializes via Jackson without losing state |

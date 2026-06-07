@@ -53,14 +53,15 @@ Do **not** modify core files (`KingdomEntity.java`, `Kingdom.java`, `CityHall.ja
 1. **Extend the quest contract** — `public class Barracks extends AbstractBarracks`
 2. **Implement `KingdomEntity`** — provide `getIdentity()`, `getName()`, `getDescription()`, `getFoundingDate()`, `getStatus()`
 3. **Annotate all fields** with `@JsonProperty` for Jackson serialization
-4. **Provide a no-arg constructor** with safe defaults (UUID-based identity, current date)
-5. **Register your class** in a static block:
+4. **Provide a no-arg constructor** with safe defaults (UUID identity, current date, `UNDER_CONSTRUCTION` status)
+5. **Provide a parameterized constructor** (if applicable) with `OPERATIONAL` status
+6. **Register your class** in a static block:
    ```java
    static {
        KingdomRegistry.register(YourClass.class);
    }
    ```
-6. **Extra methods are encouraged** — add business logic beyond the contract, but test everything
+7. **Extra methods are encouraged** — add business logic beyond the contract, but test everything
 
 ---
 

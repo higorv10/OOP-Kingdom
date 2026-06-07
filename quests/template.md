@@ -11,6 +11,7 @@ Use this checklist when submitting your Pull Request. A focused PR makes communi
 - [ ] All abstract methods are implemented
 - [ ] All fields have `@JsonProperty` annotations
 - [ ] No-arg constructor initializes safe defaults (UUID identity, `LocalDate.now()`, `UNDER_CONSTRUCTION` status)
+- [ ] Parameterized constructor (if any) sets `OPERATIONAL` status
 - [ ] Static registration block included: `static { KingdomRegistry.register(YourClass.class); }`
 - [ ] Extra methods (if any) have corresponding unit tests
 
